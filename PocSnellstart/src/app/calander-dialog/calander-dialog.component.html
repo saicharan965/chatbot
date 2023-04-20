@@ -1,0 +1,16 @@
+<h2 mat-dialog-title>1 MEER STAP</h2>
+<mat-dialog-content class="mat-typography">
+  <h3>Vul a.u.b. uw e-mailadres in</h3>
+
+
+  <mat-form-field appearance="outline">
+    <mat-label>E-Mail</mat-label>
+    <input matInput autocomplete="off" type="email" placeholder="dummy@123.com" #emailId>
+    <mat-icon matSuffix>email</mat-icon>
+  </mat-form-field>
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Annuleer</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial (click)="callCalander(emailId.value)"> Oke</button>
+</mat-dialog-actions>

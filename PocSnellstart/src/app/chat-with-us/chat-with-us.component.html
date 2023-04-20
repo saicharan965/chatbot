@@ -1,0 +1,87 @@
+<div id="ex1" #scrollMe [scrollTop]="scrollMe.scrollHeight" class="convo">
+  <ul (click)="findWhich($event)" id="chat-message" class="chat-message"></ul>
+</div>
+
+<div class="container-fluid btnContainer">
+  <div class="row my-1">
+    <div class="row text-center" style="justify-content: center; align-items: center;" *ngFor="let button of btnList">
+      <button class="btn my-2 mx-3" style="width: 250px;background-color: #F5B7B1;" (click)="hitDialogflow($event)">
+        {{ button }}
+      </button>
+    </div>
+  </div>
+</div>
+<div
+  id="textMessage"
+  class="form-row flex-container"
+  style="flex-wrap: wrap; margin-top: 50px"
+>
+  <div class="input-group flex-container">
+    <mat-form-field appearance="outline" class="Form-Field">
+      <mat-label>Send a message </mat-label>
+      <input
+        matInput
+        placeholder="Enter Message"
+        autocomplete="off"
+        #inputMessage
+        (keyup.enter)="sendMessage(inputMessage.value); inputMessage.value = ''"
+      />
+
+      <mat-icon
+        matSuffix
+        class="iconBtn"
+        (click)="sendMessage(inputMessage.value); inputMessage.value = ''"
+        >send</mat-icon
+      >
+    </mat-form-field>
+    <!-- <button style="height: 50px" class="mx-1 mb-3 btn btn-danger" data-toggle="modal" data-target="#toggleFaq" >FAQ</button> -->
+    <button
+      type="button"
+      style="height: 50px"
+      class="button mx-1 mb-3 btn btn-danger"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+      (click)="openFaq()"
+    >
+      FAQ
+    </button>
+  </div>
+</div>
+
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div 
+  class="modal fade"
+  id="exampleModal"
+  data-backdrop="static"
+  data-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div
+    class="modal-dialog "
+  >
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: #76abf7; ">
+        <h5 class="modal-title" id="exampleModalLabel">F.A.Q</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body" >
+        <!-- <app-faq-container ></app-faq-container> -->
+
+        <div class="row faqDisplay" *ngFor="let result of faqresult">
+          <li style="list-style-type: none;" class="my-2">
+            <a class="removeUnderscore" style="color:blue;font-size: 16px;" target="_blank" href="{{ result.url }}">{{ result.name}}</a>
+          </li>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,136 @@
+#sendMessage {
+  position: absolute;
+  top: 85%;
+  left: 10%;
+  z-index: 1;
+  height: 150px;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.iconBtn {
+  cursor: pointer;
+}
+
+#ex1 {
+  overflow-y: auto;
+  height: 280px;
+  overflow-x: hidden;
+}
+.chat-message {
+  list-style-type: none;
+}
+
+.btnContainer {
+  // background-color: rgb(248, 226, 197);
+  height: 110px;
+  border-radius: 10px;
+}
+
+#textMessage {
+  position: absolute;
+  top: 75%;
+  left: 10%;
+}
+
+.filed {
+  display: block;
+}
+
+.convo {
+  height: auto;
+}
+.removeUnderscore{
+  text-decoration: none;
+}
+
+
+// .modal-body{
+//   height: 395px;
+//   // left: 20%;
+
+//   position: inherit;
+// }
+
+// .modal-dialog{
+//   position: absolute;
+//   left: 80%;
+//   top: 34%;
+//   width: 300px;
+
+// }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #ex1 {
+        overflow-y: auto;
+        height: 135px;
+        overflow-x: hidden;
+      }
+      #textMessage {
+        position: absolute;
+        top: 74%;
+        left: 10%;
+      }
+
+      .modal-dialog{
+        position: absolute;
+        left: 74%;
+        top: 31%;
+        width: 280px;
+      
+      }
+
+      .modal-body{
+        text-align: center;
+        height: 175px;
+        overflow: auto;
+        position: inherit;
+      }
+      
+}
+@media only screen and (min-width: 1920px) {
+
+  #ex1 {
+    overflow-y: auto;
+    height: 320px;
+    overflow-x: hidden;
+  }
+  #textMessage {
+    position: absolute;
+    top: 82%;
+    left: 10%;
+  }
+
+  .modal-dialog{
+  position: absolute;
+  left: 79%;
+  top: 28%;
+  width: 300px;
+
+}
+
+.modal-body{
+  height: 250px;
+  text-align: center;
+  overflow: auto;
+  
+  position: inherit;
+}
+
+}

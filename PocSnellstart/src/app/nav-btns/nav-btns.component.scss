@@ -1,0 +1,30 @@
+.sideNavBtns {
+  height: 6vh;
+  background-color: #FA6105;
+  color: white;
+  width: 100%;
+  padding: none;
+  // margin-left: -40px;
+}
+.row {
+  display: flex;
+  // justify-content: center;
+  width: 100%;
+}
+
+
+.iconSpacing{
+  justify-content: space-evenly;
+}
+
+.fa-solid{
+  margin-right: 15px;
+  left: 0px;
+
+}
+.btnContainer{
+  // padding: 5%;
+  height: 80vh;
+  // display: flex;
+  // justify-content: center;
+}

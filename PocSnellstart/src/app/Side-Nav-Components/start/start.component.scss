@@ -1,0 +1,139 @@
+
+
+@media only screen and (min-width: 1250px) 
+{
+
+.started{
+  padding-top: 2%;
+  height: 100%;
+  background-color: #f5f5f5;
+}
+
+
+  .start {
+    padding-left: 3%;
+    // font-size: xx-large;
+    //  font-size-adjust: initial;
+   
+  }
+  .send {
+    padding-top: 5%;
+  }
+  .receive{
+    padding-top: 6%;
+  }
+  .overview{
+    padding-top: 6%;
+    padding-bottom: 2%;
+  }
+  
+  // .send {
+  //   height: 22%;
+  //   padding: 5%;
+  // }
+  
+  .mat-icon {
+    float: left;
+    margin-left: 20px;
+    color: #0077c8;
+    size: 5vh;
+  }
+  .mat-card {
+    padding-top: 2vh;
+    border-radius: 1vh;
+    text-align: center;
+    font-size: large;
+    margin-left: 30px;
+    height: 15vh;
+    width: 25vh;
+  }
+
+  .mat-button {
+    color: #0077c8;
+  }
+   
+
+  #send {
+    margin-left: -2vw;
+  }
+  #download_done {
+    margin-left: -13vw;
+  }
+  #Receive {
+    margin-left: -3vw;
+  }
+  #rss_feed {
+    margin-left: -12vw;
+  }
+  #archive {
+    margin-left: -3vw;
+  }
+  #trending_up {
+    margin-left: -3vw;
+  }
+  .abc {
+    padding-top: 3vh;
+  }
+  .closeyear {
+    text-align: right;
+    color: #0077c8;
+  }
+  .company {
+    text-align: right;
+    color: #0077c8;
+  }
+  .download {
+    text-align: right;
+    color: #0077c8;
+  }
+  .admin {
+    text-align: right;
+    color: #0077c8;
+  }
+  .check {
+    text-align: right;
+    color: #0077c8;
+  }
+  
+  img {
+    vertical-align: middle;
+    text-align: left;
+    padding: 1vw;
+    width: 18vw;
+    border: 0;
+  }
+  .content {
+    font-size: small;
+  }
+
+}
+
+
+
+
+
+
+// font-size: xx-small;
+
+// .mat-card{
+//     text-align: center;
+//     font-size: large;
+//     margin-left: 4vh;
+// height: 15vh;
+// width: 25vh;
+// }
+
+// .Simplecard{
+//     height: 500px;
+// }
+// .mat-grid-tile{
+//     background-color: lightblue;
+// }
+// .startc{
+//     overflow: hidden;
+// }
+
+
+// div{
+//     // border:2px solid;
+// }

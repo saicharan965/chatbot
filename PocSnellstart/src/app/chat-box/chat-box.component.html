@@ -1,0 +1,30 @@
+<div class="row chatPopop" id="chatBox">
+  <div class="col-12 chatToolbar d-flex">
+    <h2 class="chatHeading">Call us</h2>
+    <button class="btn btn-danger closeBtn" (click)="closeThis()">
+      <i class="fa fa-close"></i>
+    </button>
+  </div>
+
+  <div class="container popUpCOntent">
+    <div class="row">
+      <div class="btn-group my-2" role="group">
+        <button
+          class="btn switchBtns mx-1"
+          (click)="toggleBetweenChatNCall('chat')"
+        >
+          Chatbot
+        </button>
+        <button
+          class="btn switchBtns mx-1"
+          (click)="toggleBetweenChatNCall('call')"
+        >
+          bel ons
+        </button>
+      </div>
+      <hr />
+      <app-chat-with-us [roomId]="sessionId" *ngIf="chatTurnedOn"></app-chat-with-us>
+      <app-call-us *ngIf="!chatTurnedOn"></app-call-us>
+    </div>
+  </div>
+</div>

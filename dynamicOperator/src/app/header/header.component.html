@@ -1,0 +1,27 @@
+<mat-toolbar class="tolBarColor">
+  <span class="spacer" style="padding-left: 1%">
+    <img src="https://web.snelstart.nl/assets/img/logo.svg"
+  /></span>
+
+  <button mat-button class="navbarBtn mx-2" [routerLink]="['']">
+    <mat-icon>home</mat-icon>
+    <span class="iconspace">Startpagina</span>
+  </button>
+  <button mat-button class="navbarBtn mx-2" (click)="routeTo('chatHistory')">
+    <mat-icon>question_answer</mat-icon>
+    <span class="iconspace">Chatgeschiedenis zoeken</span>
+  </button>
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <i class="fa fa-user"></i>
+      <span class="iconspace"> profiel </span>
+    </button>
+    <button mat-menu-item>
+      <i class="fa fa-cog"></i>
+      <span class="iconspace"> Meer </span>
+    </button>
+  </mat-menu>
+</mat-toolbar>

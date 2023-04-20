@@ -1,0 +1,38 @@
+<div class="col chat-Window">
+  <div class="row">
+    <mat-toolbar class="tolBarColor">
+      <h3 class="text-center" style="align-items: center;">{{ recivedRoomId }}</h3>
+    </mat-toolbar>
+  </div>
+  <div
+    class="chat-area"
+    id="chat-area"
+    #scrollMe
+    [scrollTop]="scrollMe.scrollHeight"
+  >
+    <ul class="chat-Message" [id]="recivedRoomId"></ul>
+  </div>
+  <div class="row">
+    <mat-form-field appearance="outline">
+      <mat-label>Type Here</mat-label>
+      <input
+        matInput
+        placeholder="Send Message"
+        #inputMessage
+        [disabled]="disableInput"
+        [id]="inputId"
+        autocomplete="off"
+        (keyup.enter)="
+          sendMessageToParent(inputMessage.value); inputMessage.value = ''
+        "
+      />
+      <mat-icon
+        matSuffix
+        (click)="
+          sendMessageToParent(inputMessage.value); inputMessage.value = ''
+        "
+        >send</mat-icon
+      >
+    </mat-form-field>
+  </div>
+</div>

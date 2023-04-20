@@ -1,0 +1,38 @@
+.chatPopop {
+  position: absolute;
+  z-index: 100000000000;
+  width: 18%;
+  height: 29%;
+  border: black solid 1px;
+  // top: 81%;
+  bottom: 68%;
+  right: 1.2%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow-y: auto;
+}
+
+.removeUnderscore {
+  text-decoration: none;
+}
+
+.faqToolbar {
+  background-color: #76abf7;
+  width: 100%;
+  height: 18%;
+  justify-content: space-between;
+  // border-top-left-radius: 10px;
+  // border-top-right-radius: 10px;
+}
+
+.faqHeading {
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.closeBtn {
+  border-radius: 10px;
+}
+.faqDisplay {
+  overflow-y: auto;
+}

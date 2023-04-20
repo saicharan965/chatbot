@@ -1,0 +1,189 @@
+{
+
+  "conversationId": "049f9085-bd49-4729-9d13-7ebd4ca489dc",
+  "2ndId":"2406527d-32b8-4bb1-9b2f-93945d9d7a97",
+  "chats": [
+    {
+      "question": "Hello",
+      "botAnswer": {
+        "responseId": "b2cccf77-f9ce-45f4-a249-a2472654dc8d-0c9356c1",
+        "queryResult": {
+          "fulfillmentMessages": [
+            {
+              "platform": "PLATFORM_UNSPECIFIED",
+              "text": {
+                "text": [
+                  "Hallo, ik ben uw virtuele assistent. Hoe kan ik u helpen?"
+                ]
+              },
+              "message": "text",
+              "payload": null
+            },
+            {
+              "platform": "PLATFORM_UNSPECIFIED",
+              "text": null,
+              "message": "payload",
+              "payload": {
+                "fields": {
+                  "richContent": {
+                    "listValue": {
+                      "values": [
+                        {
+                          "listValue": {
+                            "values": [
+                              {
+                                "structValue": {
+                                  "fields": {
+                                    "type": {
+                                      "stringValue": "chips",
+                                      "kind": "stringValue"
+                                    },
+                                    "text": null,
+                                    "icon": null,
+                                    "link": null,
+                                    "options": {
+                                      "listValue": {
+                                        "values": [
+                                          {
+                                            "structValue": {
+                                              "fields": {
+                                                "text": {
+                                                  "stringValue": "Verkopen",
+                                                  "kind": "stringValue"
+                                                }
+                                              }
+                                            },
+                                            "kind": "structValue"
+                                          },
+                                          {
+                                            "structValue": {
+                                              "fields": {
+                                                "text": {
+                                                  "stringValue": "Boekhuouden",
+                                                  "kind": "stringValue"
+                                                }
+                                              }
+                                            },
+                                            "kind": "structValue"
+                                          },
+                                          {
+                                            "structValue": {
+                                              "fields": {
+                                                "text": {
+                                                  "stringValue": "Inkopen",
+                                                  "kind": "stringValue"
+                                                }
+                                              }
+                                            },
+                                            "kind": "structValue"
+                                          },
+                                          {
+                                            "structValue": {
+                                              "fields": {
+                                                "text": {
+                                                  "stringValue": "Overig",
+                                                  "kind": "stringValue"
+                                                }
+                                              }
+                                            },
+                                            "kind": "structValue"
+                                          },
+                                          {
+                                            "structValue": {
+                                              "fields": {
+                                                "text": {
+                                                  "stringValue": "Artikelen",
+                                                  "kind": "stringValue"
+                                                }
+                                              }
+                                            },
+                                            "kind": "structValue"
+                                          },
+                                          {
+                                            "structValue": {
+                                              "fields": {
+                                                "text": {
+                                                  "stringValue": "Administratiebeheer",
+                                                  "kind": "stringValue"
+                                                }
+                                              }
+                                            },
+                                            "kind": "structValue"
+                                          },
+                                          {
+                                            "structValue": {
+                                              "fields": {
+                                                "text": {
+                                                  "stringValue": "Bank",
+                                                  "kind": "stringValue"
+                                                }
+                                              }
+                                            },
+                                            "kind": "structValue"
+                                          }
+                                        ]
+                                      },
+                                      "kind": "listValue"
+                                    }
+                                  }
+                                },
+                                "kind": "structValue"
+                              }
+                            ]
+                          },
+                          "kind": "listValue"
+                        }
+                      ]
+                    },
+                    "kind": "listValue"
+                  }
+                }
+              }
+            }
+          ],
+          "outputContexts": [],
+          "queryText": "Hello",
+          "speechRecognitionConfidence": 0,
+          "action": "input.welcome",
+          "parameters": { "fields": {} },
+          "allRequiredParamsPresent": true,
+          "fulfillmentText": "Hallo, ik ben uw virtuele assistent. Hoe kan ik u helpen?",
+          "webhookSource": "",
+          "webhookPayload": null,
+          "intent": {
+            "inputContextNames": [],
+            "events": [],
+            "trainingPhrases": [],
+            "outputContexts": [],
+            "parameters": [],
+            "messages": [],
+            "defaultResponsePlatforms": [],
+            "followupIntentInfo": [],
+            "name": "projects/snelstart-nchf/agent/intents/10021484-3bd5-4e92-b494-e06ded040e57",
+            "displayName": "Default Welcome Intent",
+            "priority": 0,
+            "isFallback": false,
+            "webhookState": "WEBHOOK_STATE_UNSPECIFIED",
+            "action": "",
+            "resetContexts": false,
+            "rootFollowupIntentName": "",
+            "parentFollowupIntentName": "",
+            "mlDisabled": false,
+            "liveAgentHandoff": false,
+            "endInteraction": false
+          },
+          "intentDetectionConfidence": 1,
+          "diagnosticInfo": null,
+          "languageCode": "en",
+          "sentimentAnalysisResult": null,
+          "cancelsSlotFilling": false
+        },
+        "webhookStatus": null,
+        "outputAudio": {},
+        "outputAudioConfig": null
+      },
+      "operatorAnswer": ""
+    }
+  ],
+  "cusomterEmail": "demo@ariqt.com"
+}

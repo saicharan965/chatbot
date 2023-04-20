@@ -1,0 +1,13 @@
+{
+  "sessionId": "",
+  "ChatDetails": [
+    {
+      "customerQuery": { "input": "", "roomId": "" },
+      "botResponse": { "roomId": "", "responseArray": {} },
+      "operatorReply": {
+        "input": "",
+        "roomId": ""
+      }
+    }
+  ]
+}

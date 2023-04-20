@@ -1,0 +1,32 @@
+<div class="row callUsContent" >
+  <div class="col-12">
+    <div class="container-fluid">
+      <div class="card">
+        <p class="px-1">
+          Momenteel is de wachttijd meer dan 30 minuten, wilt u dat wij
+          terugbellen?
+        </p>
+      </div>
+    </div>
+    <div class="row my-1" style="padding-top: 15%;">
+      <div class="btn-group-sm buttonGrp" role="group">
+        <button class="btn switchBtns" (click)="CalendarFOrThirtyMins()">
+          {{ displayFormatFOrThirtyMins }}
+        </button>
+        <button class="btn switchBtns" (click)="CalendarFOrOneHour()">
+          {{ displayFormatForOneHour }}
+        </button>
+      </div>
+    </div>
+    <!-- <hr /> -->
+  </div>
+  <p class="my-1 text-center" style="padding-top: 15%;">
+    <mat-form-field appearance="outline">
+      <mat-label>Phone number</mat-label>
+      <input matInput autocomplete="off" placeholder="+31 898 898 7254" [(ngModel)]="msg" />
+      <mat-icon class="IconBtn" matSuffix (click)="callCustomer()"
+        >phone</mat-icon
+      >
+    </mat-form-field>
+  </p>
+</div>

@@ -1,0 +1,11 @@
+<!-- <div class="row chatPopop" id="faqContainer"> -->
+  <!-- <div class="col-12 faqToolbar d-flex">
+    <h2 class="faqHeading">F.A.Q</h2> -->
+    <!-- <button class="btn btn-danger closeBtn" (click)="closeThis()"><i class="fa fa-close"></i></button> -->
+  <!-- </div> -->
+  <div class="row faqDisplay" *ngFor="let result of faqresult">
+    <li style="list-style-type: none;" class="my-2">
+      <a class="removeUnderscore" target="_blank" href="{{ result.url }}">{{ result.name}}</a>
+    </li>
+  </div>
+<!-- </div> -->
